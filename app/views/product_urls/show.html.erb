@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @product_url.price %>
+</p>
+
+<p>
+  <strong>Blog:</strong>
+  <%= @product_url.blog_id %>
+</p>
+
+<%= link_to 'Edit', edit_product_url_path(@product_url) %> |
+<%= link_to 'Back', product_urls_path %>

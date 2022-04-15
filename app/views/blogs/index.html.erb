@@ -14,7 +14,8 @@
       <tr>
         <td><%= blog.title %></td>
         <td><%= blog.content %></td>
-        
+        <td><% blog.products.each do |product| %><%= product.price %> <% end %></td>
+        <td><% blog.product_urls.each do |product_url| %><%= product_url.price_url %><% end %></td>
         <td><%= link_to 'Show', blog %></td>
         <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
         <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
